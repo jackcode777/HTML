@@ -4,7 +4,7 @@ body {
     height: 100vh;
 }
 main {
-    margin: 10% 50%;
+    margin: 10% 25%;
 }
 main .parent {
     background: rgba(100,1,1,0.3);
