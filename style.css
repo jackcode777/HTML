@@ -17,8 +17,8 @@ main .child {
     background: rgba(0,225,0,0.3);
     border-radius: 10%;
     border: 1px solid green;
-    min-width: 100px;
-    max-width: 200px;
-    min-height: 100px;
-    max-height: 200px;
+    min-width: 200px;
+    max-width: 400px;
+    min-height: 200px;
+    max-height: 400px;
 }
