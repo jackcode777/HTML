@@ -1,10 +1,12 @@
 body {
     margin: 0;
+}
+
+main {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .parenta {
     background-color: rgba(1,1,1,0.7);
     min-width: 400px;
