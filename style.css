@@ -2,6 +2,8 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(to right, #ccc 1px, transparent 1px), linear-gradient(to bottom, #ccc 1px, transparent 1px);
+    background-size: 50%;
 }
 header {
     font-family: arial;
@@ -10,7 +12,7 @@ header {
     color: transparent;
 }
 main {
-    margin: 10% 20%;
+    margin: 0 20%;
     width: 60vw;
     height: 80vh;
     background-color: white;
