@@ -10,8 +10,8 @@ header {
     color: transparent;
 }
 main {
-    max-width: 60vw;
-    max-height: 80vh;
+    width: 60vw;
+    height: 80vh;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 15px 15px 0px #ccc;
