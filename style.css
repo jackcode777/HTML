@@ -1,27 +1,9 @@
-body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(to right, #ccc 1px, transparent 1px), linear-gradient(to bottom, #ccc 1px, transparent 1px);
-    background-size: 50%;
-}
-header h1 {
-    display: inline-block;
-    font-family: arial;
-    background: linear-gradient(to right, white, black);
-    background-clip: text;
-    color: transparent;
-}
+body { margin: 0; padding: 10px; }
+header h1 { text-align: center; font-family: arial;}
 main {
-    margin: 0 20% 10% 20%;
-    width: 60vw;
-    height: 80vh;
+    margin: 0px auto;
+    max-width: 720px;
     background-color: white;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 15px 15px 0px #ccc;
-    border: 1px solid gray;
-}
-main:hover {
-    background: rgba(225,225,225,0.3);
-    box-shadow: inset 0px 0px 15px 1px #ccc;
 }
