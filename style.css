@@ -1,24 +1,23 @@
 body {
     margin: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
+header {
+    font-family: arial;
+    background: linear-gradient(to right, white, black);
+    background-clip: text;
+    color: transparent;
+}
 main {
-    margin: 10% 25%;
+    max-width: 60vw;
+    max-height: 80vh;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 15px 15px 0px #ccc;
+    border: 1px solid gray;
 }
-main .parent {
-    background: rgba(100,1,1,0.3);
-    border: 1px solid red;
-    border-radius: 10%;
-    width: 400px;
-    height: 400px;
-}
-main .child {
-    background: rgba(0,225,0,0.3);
-    border-radius: 10%;
-    border: 1px solid green;
-    min-width: 200px;
-    max-width: 400px;
-    min-height: 200px;
-    max-height: 400px;
+main:hover {
+    background: rgba(225,225,225,0.3);
+    box-shadow: inset 0px 0px 15px 1px #ccc;
 }
