@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>insurance checker</title>
+    <style>/*
+        body {margin:0; padding:50px;background:#ccc;}*/
+        .container {
+            display:flex;
+            background:#eeecec;
+            padding:10px;
+            border-radius:10px;
+            flex-direction:column;
+            max-width:720px;
+            margin:32px auto;
+            box-shadow:0 15px 15px #918d8d;
+        }
+        input[type="number"],
+        button {
+            padding:10px;
+            border:1px solid lightgray;
+            width:100%;
+        }
+        .hintInfo {
+            margin-top:10px;
+            margin-bottom:12px;
+        }
+        #output {
+            flex:1;
+            background:snow;
+            padding:12px;
+            margin-bottom:15px;
+        }
+        .col {
+            display:grid;
+            grid-template-rows:80px 50px;
+        }
+        label[for="output"] {margin-top:15px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3 style="text-align:center;">Insurance</h3>
+        <p class="hintInfo">An insurance amount of <mark>3%</mark> applied for Both International and Local shipment.</p>
+        <div class="col">
+            <div class="myinput">
+               <label for="input">Item(s) Value</label><br>
+               <input type="number" id="itemsValue" name="input" placeholder="0.00" required>
+            </div>
+            <button id="checkBtn">Check</button>
+        </div>
+        <label for="output">Amount</label>
+        <div id="output" id="output"></div>
+    </div>
+    <script> 
+        const btn = document.getElementById("checkBtn").addEventListener("click", () => {
+            const input = Number(document.getElementById("itemsValue").value);
+            let x = (input / 100) * 3;
+            document.getElementById("output").innerHTML = "$" + x.toFixed(2);
+        });
+    </script>
+</body>
+</html>
